@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 18.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "SQL Server Message Broker", "SQL Server Message Broker\SQL Server Message Broker.ssmssqlproj", "{E205747E-79A0-427B-8D1A-D67292D2DF96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E205747E-79A0-427B-8D1A-D67292D2DF96}.Default|Default.ActiveCfg = Default
+		{ACFD943D-EBEB-4930-9594-1DEBFBFD1A09}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBED0711-5115-4C0D-91DD-5AF0ECEC36AD}
+	EndGlobalSection
+EndGlobal
