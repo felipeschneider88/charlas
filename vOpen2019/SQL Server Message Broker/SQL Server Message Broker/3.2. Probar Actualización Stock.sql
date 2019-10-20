@@ -1,3 +1,7 @@
+-- Nos pasamos a la DB HolaMundo
+USE HolaMundo;
+GO
+
 SELECT  * FROM [dbo].[Articulos];
 -- Iniciar una conversacion y enviar un mensaje inicial
 DECLARE @conversation_handle UNIQUEIDENTIFIER;
