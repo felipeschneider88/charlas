@@ -1,4 +1,4 @@
--- Enable Service Broker and switch to the database
+-- Configurar Service Broker y cambiar a nuestra base de datos
 USE master;
 GO
 IF DB_ID('HolaMundo') IS NOT NULL
@@ -14,7 +14,7 @@ ALTER DATABASE HolaMundo
 GO
 USE HolaMundo;
 GO
--- Crear los mensajes
+-- Crear los mensajes de la aplicacion
 CREATE MESSAGE TYPE
        [HolaMundoMensaje]
        VALIDATION = WELL_FORMED_XML;

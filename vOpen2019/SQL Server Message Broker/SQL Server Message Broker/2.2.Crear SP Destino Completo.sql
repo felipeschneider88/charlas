@@ -67,6 +67,4 @@ AS
     COMMIT TRANSACTION;
   END
 GO
-
-
 -- Siempre prueba tus SP antes de entrar en produccion
