@@ -1,0 +1,108 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TechTalk",
+		"_postman_id": "16feb75c-0792-d1c2-19df-0ddd5bb6763b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "obtener todas las masccotas",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"tests[\"Response time is less than 200ms\"] = responseTime < 200;",
+							"",
+							"tests[\"Body has a name\"] = responseBody.has(\"name\");",
+							"",
+							"tests[\"Body has a createdTime\"] = responseBody.has(\"createdTime\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:5292/api/Mascota",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"nombre\": \"string\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "obtener una mascota por ID",
+			"request": {
+				"url": "http://localhost:5292/api/Mascota/f621f6db-665c-49a5-879e-7c7e42a0512a",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"nombre\": \"string\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Probar nueva mascota edad mal",
+			"request": {
+				"url": "http://localhost:5292/api/Mascota",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"fallado\",\r\n  \"age\": -1\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Probar nueva mascota nombre null",
+			"request": {
+				"url": "http://localhost:5292/api/Mascota",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"age\": 3\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
